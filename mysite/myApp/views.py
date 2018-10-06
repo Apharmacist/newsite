@@ -4,6 +4,13 @@ from django.shortcuts import render
 # Create your views here.
 
 from .models import Students, Grades
+
+def index(request):
+    return render(request, 'myApp/index.html')
+
+
+
+
 def students(request):
     studentList = Students.stuObj.all()
     text = {'students': studentList}
