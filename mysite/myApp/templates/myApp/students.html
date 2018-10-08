@@ -10,7 +10,7 @@
     <ul>
         {% for student in students %}
             <li>
-            {{ student.s_name }}--{{ student.s_contend }}
+            {{forloop.counter}}--{{ student.s_name }}--{{ student.s_contend }}
             </li>
 
            {% endfor %}
